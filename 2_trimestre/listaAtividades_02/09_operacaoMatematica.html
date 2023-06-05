@@ -8,10 +8,31 @@
     */
 
     //ENTRADA
-
+    const n1 = Number(prompt('Informe um número'))
+    const n2 = Number(prompt('Informe o segundo número'))
+    const operacao = prompt('Informe a operação desejada (* para multiplicação, + para adição, - para subtração e / para divisão)')
 
     //PROCESSAMENTO
-
+    if(operacao = "+"){
+        const conta1 = n1 + n2
+        if(conta1 < 0){
+            alert('é um número negativo')
+        }
+        else if(conta1 > 0){
+            alert('é um número positivo')
+        }//positivo ou negativo
+        
+    }
+    else if(operacao = "-"){
+        alert(n1 - n2)
+    }
+    else if(operacao = "/"){
+        alert(n1/n2)
+    }
+    else if(operacao = "*"){
+        alert(n1 * n2)
+    }
+    
     
     //SAÍDA
 
