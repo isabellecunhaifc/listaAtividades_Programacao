@@ -7,10 +7,29 @@
         //- acima de 1500: aumento de 5 %
     
     // Entrada
-
+    const preço = Number(prompt("Informe o preço do produto"))
     
     // Processamento
-
+    if(preço <= 280){
+        const conta = preço * 20/100
+        const resultado = Number(preço + conta)
+        alert(`O preço do produto fica R$${resultado}.`)
+    } 
+    else if(preço <= 700){
+        const conta = preço * 15/100
+        const resultado = Number(preço + conta)
+        alert(`O preço do produto fica R$${resultado}.`)
+    }
+    else if(preço <= 1500){
+        const conta = preço * 10/100
+        const resultado = Number(preço + conta)
+        alert(`O preço do produto fica R$${resultado}.`)
+    }
+    else{
+        const conta = preço * 5/100
+        const resultado = Number(preço + conta)
+        alert(`O preço do produto fica R$${resultado}`)
+    }
     
     // Saída
 

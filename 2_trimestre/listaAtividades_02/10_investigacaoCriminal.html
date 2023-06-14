@@ -11,12 +11,29 @@
     */
 
     //ENTRADA
-     const telefonou = prompt('Você telefonou para a vítima?(S para sim e N para não)')
-     const local = prompt('Você esteve no local do crime?(S para sim e N para não)')
-     const moraperto = prompt('Você mora perto da vítima?(S para sim e N para não)')
-     const devia = prompt('Você devia para a vítima?(S para sim e N para não)')
-     const trabalhou = prompt('Já trabalhou com a vítima?(S para sim e N para não)')
+     const pergunta = prompt('Você telefonou para a vítima?(S para sim e N para não)')
+     const pergunta2 = prompt('Você esteve no local do crime?(S para sim e N para não)')
+     const pergunta3 = prompt('Você mora perto da vítima?(S para sim e N para não)')
+     const pergunta4 = prompt('Você devia para a vítima?(S para sim e N para não)')
+     const pergunta5 = prompt('Já trabalhou com a vítima?(S para sim e N para não)')
     //PROCESSAMENTO
+     let resposta = 0
+
+     if(pergunta == "S"){
+        resposta++
+     }
+     else if(pergunta2 == "S"){
+        resposta++
+     }
+     else if(pergunta3 == "S"){
+        resposta++
+     }
+     else if(pergunta4 == "S"){
+        resposta++
+     }
+     else if(pergunta5 == "S"){
+        resposta++
+     }
      
     //SAÍDA
 
