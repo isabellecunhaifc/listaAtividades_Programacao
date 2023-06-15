@@ -6,7 +6,15 @@
     */
 
     //ENTRADA
-
+    const numero = Number(prompt (`informe um numero`).trim().replace(",","."));
+    const n = Math.round(numero)
+    //PROCESSAMENTO
+    if (Number.isInteger(numero)) {
+        alert(`o número é inteiro`)
+    }
+    else {
+        alert(`o numero é decimal`)
+    }
 
     //PROCESSAMENTO
 

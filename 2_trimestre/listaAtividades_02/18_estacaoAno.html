@@ -6,40 +6,42 @@
     */
 
     //ENTRADA
-    const hemisfério = prompt("Informe em que hemisfério você está (S para sul e N para norte)").trim().toLowerCase()
-    const mes = Number(prompt("Informe o mês em número")).trim()
-    const dia = Number(prompt("Informe o dia")).trim()
+    
 
     //PROCESSAMENTO
-    if(hemisfério == "S"){
-        if(mes = 1){
-            alert("É verão")
-        }
-        else if(mes = 2){
-            alert("É verão")
-        }
-        else if(mes = 3 && dia <= 21){
-            alert("É verão")
-        }
-        else if(mes = 3 && dia > 21){
-            alert("É outono")
-        }
-        else if(mes = 4){
-            alert("É outono")
-        }
-        else if(mes = 5){
-            alert("É outono")
-        }
-        else if(mes = 6 && dia <= 21){
-            alert("É outono")
-        }
-        else if(mes = 6 && dia > 21){
-            alert("É inverno")
-        }
-        else if(mes = 7){
-            alert
-        }
+    const hemisferio= prompt('informe em que hemisfério voce está')
+    const mes= Number(prompt('informe em que mes estamos'))
+
+    //PROCESSAMENTO
+  if(hemisferio == "norte"){
+    if(mes >=3 && mes <= 5){
+        alert("estamos na primavera")
     }
+    else if(mes>=6 && mes <=8){
+        alert('estamos no verão')
+    }
+    else if(mes>=9 && mes<=11){
+        alert('estamos no outono')
+    }
+    else{
+        alert('estamos no inverno')
+    }
+  }
+  else if(hemisferio == "sul"){
+    if(mes >=3 && mes <= 5){
+        alert('estamos no outono')
+    }
+    else if( mes >= 6 && mes <=8){
+        alert("estamos no inverno")
+    }
+    else if( mes>= 9 && mes<= 11 ){
+        alert('estamos na primavera')
+    }
+    else{
+        alert('estamos no verão')
+    }
+  }
+    
     
     //SAÍDA
 

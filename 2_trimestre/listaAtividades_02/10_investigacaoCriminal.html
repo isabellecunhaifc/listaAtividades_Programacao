@@ -11,29 +11,42 @@
     */
 
     //ENTRADA
-     const pergunta = prompt('Você telefonou para a vítima?(S para sim e N para não)')
-     const pergunta2 = prompt('Você esteve no local do crime?(S para sim e N para não)')
-     const pergunta3 = prompt('Você mora perto da vítima?(S para sim e N para não)')
-     const pergunta4 = prompt('Você devia para a vítima?(S para sim e N para não)')
-     const pergunta5 = prompt('Já trabalhou com a vítima?(S para sim e N para não)')
-    //PROCESSAMENTO
-     let resposta = 0
+    const pergunta = prompt(`Telefonou para a vítima? (Responda com S ou N)`).trim().toLowerCase();
+    const pergunta2 = prompt(`Esteve no local do crime? (Responda com S ou N)`).trim().toLowerCase();
+    const pergunta3 = prompt(`Mora perto da vítima? (Responda com S ou N)`).trim().toLowerCase();
+    const pergunta4 = prompt(`Devia para a vítima? (Responda com S ou N)`).trim().toLowerCase();
+    const pergunta5 = prompt(`Já trabalhou com a vítima? (Responda com S ou N)`).trim().toLowerCase();
 
-     if(pergunta == "S"){
-        resposta++
-     }
-     else if(pergunta2 == "S"){
-        resposta++
-     }
-     else if(pergunta3 == "S"){
-        resposta++
-     }
-     else if(pergunta4 == "S"){
-        resposta++
-     }
-     else if(pergunta5 == "S"){
-        resposta++
-     }
+    //PROCESSAMENTO
+    let resposta = 0;
+    if (pergunta == "s") {
+        resposta++;
+    }
+    if (pergunta2 == "s") {
+        resposta++;
+    }
+    if (pergunta3 == "s") {
+        resposta++;
+    }
+    if (pergunta4 == "s") {
+        resposta++; 
+    }
+    if (pergunta5 == "s") {
+        resposta++;
+    }
+    
+    if (resposta == 2) {
+        document.write(`Suspeito`);
+    }
+    else if (resposta == 3 || resposta == 4) {
+        document.write(`Cúmplice`);
+    }
+    else if (resposta == 5) {
+        document.write(`Assasino`);
+    }
+    else {
+        document.write(`Inocente`);
+    }
      
     //SAÍDA
 
